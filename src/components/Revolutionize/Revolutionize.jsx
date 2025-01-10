@@ -4,7 +4,7 @@ import { FiBox, FiFileText, FiDollarSign } from "react-icons/fi";
 const Revolutionize = () => {
   return (
     <div className="bg-gradient-to-r from-white to-green-100 py-20 ">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-32">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center w-11/12  gap-32">
     
         <div className="flex justify-center lg:justify-end">
           <img

@@ -6,7 +6,7 @@ const Banner = () => {
       <h1 className="text-5xl font-bold mb-4">Experience PharmaEase in Action</h1>
       <p className="text-lg mb-8">
         Discover how PharmaEase can transform your pharmacy operations.
-        <br />
+        <br/>
         Click below to view a demo and see the benefits firsthand.
       </p>
       <div className="flex justify-center gap-4">
