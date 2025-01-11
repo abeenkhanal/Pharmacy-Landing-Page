@@ -27,6 +27,7 @@ const Revolutionize = () => {
           </p>
 
    
+   
           <div className="space-y-6">
             <div className="flex items-start gap-4">
               <FiBox className="text-blue-600 text-4xl" />
