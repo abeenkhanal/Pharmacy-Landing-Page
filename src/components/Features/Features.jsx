@@ -59,7 +59,7 @@ const features = [
 
 const Features = () => {
   return (
-    <div className=''>``
+    <div className=''>
       <div
         className="py-16"
         style={{
