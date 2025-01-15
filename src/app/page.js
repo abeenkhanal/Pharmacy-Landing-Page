@@ -45,6 +45,7 @@ export default function Home() {
       <Revolutionize/>
       <Featuresdata features={features} />
       <Testimonials/>
+      
    </div>
   );
 }
