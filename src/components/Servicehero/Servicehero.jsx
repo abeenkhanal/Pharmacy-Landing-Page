@@ -1,20 +1,19 @@
-
 import React from "react";
+import { FaBoxes, FaPrescriptionBottle, FaChartLine, FaUserMd, FaLock, FaHeadset } from "react-icons/fa";
 
 function Servicehero() {
     return (
-
         <div className="bg-white min-h-screen text-gray-800">
-            <div
-                className=" bg-cover bg-center"
+            <div className=" bg-cover bg-center"
                 style={{
                     backgroundImage: "url('/pattern2.jpg')",
                     backgroundAttachment: "fixed",
                 }}
             >
-                <section className="flex flex-col lg:flex-row items-center justify-between  py-16 w-11/12 mx-auto">
-                    <div className="lg:w-1/2  lg:text-left">
-                        <h1 className="text-5xl font-extrabold leading-tight  mb-6">
+                {/* Hero Section */}
+                <section className="flex flex-col lg:flex-row items-center justify-between py-16 w-11/12 mx-auto">
+                    <div className="lg:w-1/2 lg:text-left">
+                        <h1 className="text-5xl font-extrabold leading-tight mb-6">
                             Transform Your <span className="text-blue-600">Pharmacy</span> Operations
                         </h1>
                         <p className="text-lg text-gray-600 mb-4">
@@ -29,22 +28,26 @@ function Servicehero() {
                             <li>Built-in patient management to enhance customer satisfaction.</li>
                         </ul>
                         <div className="flex flex-col sm:flex-row items-center gap-4">
-                            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg shadow-lg hover:bg-blue-700">
-                                Get Started Today
+                           
+                            <a href="/gcghvu">
+                            <button  className="bg-blue-600 text-white px-8 py-3 rounded-lg shadow-lg hover:bg-blue-700">
+                               Get Started Today
                             </button>
-                            <a href="/Featurespage" className="text-blue-600 hover:underline">
+                            </a>
+                           <button>
+                           <a href="/Featurespage" className="text-blue-600 hover:underline">
                                 Learn More About Features
                             </a>
+                           </button>
                         </div>
                     </div>
-
+                    {/* Image Section */}
                     <div className="mt-8 lg:mt-0 lg:w-1/2">
-                        <div className="grid grid-cols-2 gap-4">
-                            <img src="about.jpg" alt="Feature 1" className="rounded-lg shadow" />
-                            <img src="about.jpg" alt="Feature 2" className="rounded-lg shadow" />
-                            <img src="about.jpg" alt="Feature 3" className="rounded-lg shadow" />
-                            <img src="about.jpg" alt="Feature 4" className="rounded-lg shadow" />
-                        </div>
+                        <img
+                            src="about.jpg"
+                            alt="Pharmacy Management"
+                            className="rounded-lg shadow-lg w-full"
+                        />
                     </div>
                 </section>
                 <section className="bg-gray-50 py-12">
@@ -69,53 +72,77 @@ function Servicehero() {
                 </section>
 
                 {/* Features Section */}
-                <section className="py-16 bg-white">
+                <section className="py-16 bg-gradient-to-l from-white to-green-100">
                     <div className="max-w-7xl mx-auto px-8">
                         <h2 className="text-3xl font-bold text-center mb-12">
                             Why Choose Our Pharmacy Management Software?
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            <div className="p-6 border rounded-lg shadow hover:shadow-lg">
-                                <h3 className="text-xl font-semibold mb-2">Inventory Management</h3>
-                                <p className="text-gray-600">
-                                    Easily track and manage medicine stocks with real-time updates
-                                    and low-stock alerts.
-                                </p>
+                            {/* Inventory Management */}
+                            <div className="p-6 border rounded-lg shadow hover:shadow-lg flex items-start">
+                                <FaBoxes className="text-blue-600 text-5xl sm:text-4xl mr-4" />
+                                <div>
+                                    <h3 className="text-xl font-semibold mb-2">Inventory Management</h3>
+                                    <p className="text-gray-600">
+                                        Easily track and manage medicine stocks with real-time updates
+                                        and low-stock alerts.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="p-6 border rounded-lg shadow hover:shadow-lg">
-                                <h3 className="text-xl font-semibold mb-2">Prescription Tracking</h3>
-                                <p className="text-gray-600">
-                                    Ensure seamless prescription fulfillment with automated tracking
-                                    and reminders.
-                                </p>
+                            {/* Prescription Tracking */}
+                            <div className="p-6 border rounded-lg shadow hover:shadow-lg flex items-start">
+                                <FaPrescriptionBottle className="text-blue-600 text-5xl sm:text-4xl mr-4" />
+                                <div>
+                                    <h3 className="text-xl font-semibold mb-2">Prescription Tracking</h3>
+                                    <p className="text-gray-600">
+                                        Ensure seamless prescription fulfillment with automated tracking
+                                        and reminders.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="p-6 border rounded-lg shadow hover:shadow-lg">
-                                <h3 className="text-xl font-semibold mb-2">Analytics Dashboard</h3>
-                                <p className="text-gray-600">
-                                    Gain insights into your pharmacy’s performance with detailed
-                                    sales and inventory reports.
-                                </p>
+                            {/* Analytics Dashboard */}
+                            <div className="p-6 border rounded-lg shadow hover:shadow-lg flex items-start">
+                                <FaChartLine className="text-blue-600 text-5xl sm:text-4xl mr-4" />
+                                <div>
+                                    <h3 className="text-xl font-semibold mb-2">Analytics Dashboard</h3>
+                                    <p className="text-gray-600">
+                                        Gain insights into your pharmacy’s performance with detailed
+                                        sales and inventory reports.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="p-6 border rounded-lg shadow hover:shadow-lg">
-                                <h3 className="text-xl font-semibold mb-2">Patient Management</h3>
-                                <p className="text-gray-600">
-                                    Keep track of patient profiles, prescriptions, and medical
-                                    history in one place.
-                                </p>
+                            {/* Patient Management */}
+                            <div className="p-6 border rounded-lg shadow hover:shadow-lg flex items-start">
+                                <FaUserMd className="text-blue-600 text-5xl sm:text-4xl mr-4" />
+                                <div>
+                                    <h3 className="text-xl font-semibold mb-2">Patient Management</h3>
+                                    <p className="text-gray-600">
+                                        Keep track of patient profiles, prescriptions, and medical
+                                        history in one place.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="p-6 border rounded-lg shadow hover:shadow-lg">
-                                <h3 className="text-xl font-semibold mb-2">Secure Data Storage</h3>
-                                <p className="text-gray-600">
-                                    Protect sensitive information with our secure and compliant data
-                                    storage solutions.
-                                </p>
+                            {/* Secure Data Storage */}
+                            <div className="p-6 border rounded-lg shadow hover:shadow-lg flex items-start">
+                                <FaLock className="text-blue-600 text-5xl sm:text-4xl mr-4" />
+                                <div>
+                                    <h3 className="text-xl font-semibold mb-2">Secure Data Storage</h3>
+                                    <p className="text-gray-600">
+                                        Protect sensitive information with our secure and compliant data
+                                        storage solutions.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="p-6 border rounded-lg shadow hover:shadow-lg">
-                                <h3 className="text-xl font-semibold mb-2">24/7 Support</h3>
-                                <p className="text-gray-600">
-                                    Get round-the-clock technical support for uninterrupted
-                                    operations.
-                                </p>
+                            {/* 24/7 Support */}
+                            <div className="p-6 border rounded-lg shadow hover:shadow-lg flex items-start">
+                                <FaHeadset className="text-blue-600 text-5xl sm:text-4xl mr-4" />
+                                <div>
+                                    <h3 className="text-xl font-semibold mb-2">24/7 Support</h3>
+                                    <p className="text-gray-600">
+                                        Get round-the-clock technical support for uninterrupted
+                                        operations.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
