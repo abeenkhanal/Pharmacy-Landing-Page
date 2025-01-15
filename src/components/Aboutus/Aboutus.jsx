@@ -5,7 +5,7 @@ import React from 'react';
 const Aboutus = () => {
   return (
     <div
-      className="flex flex-col items-center justify-between px-6 md:px-16 py-20"
+      className="flex flex-col items-center justify-between px-6 md:px-16 py-20 "
       style={{
         backgroundImage: "url('/pattern2.jpg')",
         backgroundAttachment: "fixed",
@@ -13,9 +13,7 @@ const Aboutus = () => {
         backgroundPosition: "center",
       }}
     >
-      {/* Responsive Layout Container */}
       <div className="flex flex-col md:flex-row items-center gap-10  max-w-7xl w-11/12">
-        {/* Image Section */}
         <div className="flex justify-center md:w-1/2">
           <Image
             src="/about.jpg"
@@ -27,7 +25,6 @@ const Aboutus = () => {
           />
         </div>
 
-        {/* Text Section */}
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight mb-6">
             Revolutionize Your Pharmacy Management

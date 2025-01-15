@@ -3,7 +3,7 @@ import { FaClipboardList, FaLock, FaFileInvoice, FaChartLine, FaHeadset, FaShiel
 
 const PharmacySolutions = () => {
   return (
-    <div className="bg-gradient-to-b from-blue-900 to-blue-700 text-white flex flex-col p-8">
+    <div className="bg-gradient-to-l from-white to-green-100 text-white flex flex-col p-8  ">
       <div className="flex flex-col items-center py-12 px-6 text-center bg-gradient-to-r from-blue-800 to-blue-600">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
           Tailored Pharmacy Solutions

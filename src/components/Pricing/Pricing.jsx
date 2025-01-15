@@ -42,7 +42,7 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gradient-to-r from-white to-green-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold text-gray-800 sm:text-4xl">Pricing Plan</h2>
         <p className="text-gray-500 mt-2 sm:text-lg">
