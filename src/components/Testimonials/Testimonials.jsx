@@ -49,8 +49,6 @@ const testimonials = [
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Calculate total slides based on screen size
   const totalSlides = testimonials.length;
 
   useEffect(() => {
@@ -67,7 +65,7 @@ const Testimonials = () => {
           What Our Clients Say
         </h2>
         <div className="relative overflow-hidden">
-          {/* Testimonials Slider */}
+          
           <div
             className="flex transition-transform duration-700 ease-in-out"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -98,7 +96,7 @@ const Testimonials = () => {
           </div>
         </div>
 
-        {/* Pagination Dots */}
+        
         <div className="flex justify-center mt-6 space-x-2">
           {testimonials.map((_, index) => (
             <button
