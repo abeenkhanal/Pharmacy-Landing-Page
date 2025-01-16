@@ -1,136 +1,104 @@
-import React from 'react';
-import Image from "next/image";
-import Link from "next/link"; // Import Link from next/link
-import { FaChartBar, FaCogs, FaFilePrescription, FaPills, FaTruck, FaUsers } from "react-icons/fa";
-import Featuresdata from '../Featuresdata/Featuresdata';
+import React from "react";
 
-const features = [
-  {
-    icon: <FaPills size={70} className="text-white bg-gradient-to-r from-blue-500 to-blue-700 p-4 rounded-full shadow-md" />,
-    title: "Inventory Management",
-    description: "Track and manage stock levels effortlessly.",
-  },
-  {
-    icon: <FaFilePrescription size={70} className="text-white bg-gradient-to-r from-green-500 to-green-700 p-4 rounded-full shadow-md" />,
-    title: "Prescription Tracking",
-    description: "Easily manage and track prescriptions.",
-  },
-  {
-    icon: <FaUsers size={70} className="text-white bg-gradient-to-r from-purple-500 to-purple-700 p-4 rounded-full shadow-md" />,
-    title: "Team Collaboration",
-    description: "Improve communication among pharmacy staff.",
-  },
-  {
-    icon: <FaChartBar size={70} className="text-white bg-gradient-to-r from-yellow-500 to-yellow-600 p-4 rounded-full shadow-md" />,
-    title: "Sales Reports",
-    description: "Analyze and generate detailed sales reports.",
-  },
-  {
-    icon: <FaCogs size={70} className="text-white bg-gradient-to-r from-pink-500 to-pink-700 p-4 rounded-full shadow-md" />,
-    title: "Customizable Dashboard",
-    description: "Personalize your workflow for better productivity.",
-  },
-  {
-    icon: <FaTruck size={70} className="text-white bg-gradient-to-r from-red-500 to-red-700 p-4 rounded-full shadow-md" />,
-    title: "Supplier Management",
-    description: "Efficiently manage and track suppliers.",
-  },
-  {
-    icon: <FaPills size={70} className="text-white bg-gradient-to-r from-blue-500 to-blue-700 p-4 rounded-full shadow-md" />,
-    title: "Inventory Management",
-    description: "Track and manage stock levels effortlessly.",
-  },
-  {
-    icon: <FaFilePrescription size={70} className="text-white bg-gradient-to-r from-green-500 to-green-700 p-4 rounded-full shadow-md" />,
-    title: "Prescription Tracking",
-    description: "Easily manage and track prescriptions.",
-  },
-  {
-    icon: <FaUsers size={70} className="text-white bg-gradient-to-r from-purple-500 to-purple-700 p-4 rounded-full shadow-md" />,
-    title: "Team Collaboration",
-    description: "Improve communication among pharmacy staff.",
-  },
-  {
-    icon: <FaChartBar size={70} className="text-white bg-gradient-to-r from-yellow-500 to-yellow-600 p-4 rounded-full shadow-md" />,
-    title: "Sales Reports",
-    description: "Analyze and generate detailed sales reports.",
-  },
-];
-
-const Features = () => {
+const Contact = () => {
   return (
-    <div className=''>
-      <div
-        className="py-16"
-        style={{
-          backgroundImage: "url('/pattern2.jpg')",
-          backgroundAttachment: "fixed",
-        }}
-      >
-        <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center">
-          {/* Left Section */}
-          <div className="lg:w-1/2 text-center lg:text-left">
-            <h1 className="text-5xl font-bold text-gray-800 leading-tight">
-              Discover Our Pharmacy Management Software
-            </h1>
-            <p className="mt-4 text-xl text-gray-600 leading-relaxed">
-              Our comprehensive pharmacy management software helps streamline
-              inventory, manage prescriptions, track sales, and enhance customer
-              satisfaction. Simplify your pharmacy operations and focus on what
-              matters most—providing quality care.
-            </p>
-            <ul className="mt-6 space-y-3 text-left">
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-blue-500 rounded-full mr-3"></span>
-                Track inventory with real-time updates
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-green-500 rounded-full mr-3"></span>
-                Manage prescriptions and automate refills
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-purple-500 rounded-full mr-3"></span>
-                Generate detailed sales and business reports
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-yellow-500 rounded-full mr-3"></span>
-                Provide seamless customer service
-              </li>
-            </ul>
-            <Link href="/Contactpage">
-              <button className="mt-8 bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
-                Contact Us
-              </button>
-            </Link>
-          </div>
+    <div
+      className="py-16"
+      style={{
+        backgroundImage: "url('/pattern2.jpg')",
+        backgroundAttachment: "fixed",
+      }}
+    >
+      <div className="min-h-screen bg-gray-50 bg-opacity-90 flex items-center justify-center">
+        <div className="container mx-auto p-6">
+          <div className="grid md:grid-cols-2 gap-10 items-center bg-white shadow-lg rounded-lg overflow-hidden">
+            {/* Left Section: Contact Form */}
+            <div className="p-8">
+              <h1 className="text-2xl font-bold mb-4">Get in touch</h1>
+              <p className="text-gray-600 mb-6">
+                Our friendly team would love to hear from you!
+              </p>
+              <form className="space-y-4">
+                {/* Name Inputs */}
+                <div className="grid grid-cols-2 gap-4">
+                  <input
+                    type="text"
+                    placeholder="First name"
+                    className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    required
+                  />
+                  <input
+                    type="text"
+                    placeholder="Last name"
+                    className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    required
+                  />
+                </div>
+                {/* Email Input */}
+                <input
+                  type="email"
+                  placeholder="you@company.com"
+                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  required
+                />
+                {/* Phone Input */}
+                <input
+                  type="tel"
+                  placeholder="+977 00000-00000"
+                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                />
+                {/* Message Input */}
+                <textarea
+                  placeholder="Message"
+                  rows="4"
+                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                ></textarea>
+                {/* Checkbox */}
+                <div className="flex items-center">
+                  <input
+                    type="checkbox"
+                    id="privacyPolicy"
+                    className="h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-300 rounded"
+                  />
+                  <label
+                    htmlFor="privacyPolicy"
+                    className="ml-2 text-gray-600 text-sm"
+                  >
+                    You agree to our friendly{" "}
+                    <a
+                      href="#"
+                      className="text-purple-500 underline hover:text-purple-700"
+                    >
+                      privacy policy
+                    </a>
+                    .
+                  </label>
+                </div>
+                {/* Submit Button */}
+                <button
+                  type="submit"
+                  className="w-full bg-purple-600 text-white p-3 rounded-md hover:bg-purple-700 transition"
+                >
+                  Send message
+                </button>
+              </form>
+            </div>
 
-          {/* Right Section */}
-          <div className="mt-12 lg:mt-0 lg:w-1/2 flex justify-center">
-            <div className="relative w-full max-w-xl">
-              <Image
-                src="/features.png"
-                alt="Pharmacy Management Features"
-                width={800}
-                height={600}
-                className="rounded-lg shadow-xl"
-              />
+            {/* Right Section: Google Map */}
+            <div className="relative h-[500px]">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.6673558020444!2d83.4610641!3d27.6905394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399685bb45101c0b%3A0x6f093136e0e2cb10!2sAbhyam%20Robotics%20Institution%20of%20Business%20and%20Technology%20(ARIBT)!5e0!3m2!1sen!2snp!4v1612765127277!5m2!1sen!2snp"
+                title="Google Map"
+                allowFullScreen
+                loading="lazy"
+                className="absolute inset-0 w-full h-full border-0"
+              ></iframe>
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Key Features Section */}
-      <div className="bg-gradient-to-l from-white to-green-100 py-20">
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-center text-gray-800 mb-6 sm:mb-10 w-4/5 sm:w-3/5 mx-auto leading-tight">
-          Key Features of Our Pharmacy Management Software
-        </h1>
-        <p className="text-center text-gray-600 text-base sm:text-lg mb-12 sm:mb-16 w-4/5 sm:w-3/6 mx-auto leading-relaxed">
-          Discover how our software can streamline your pharmacy operations with advanced tools and features.
-        </p>
-        <Featuresdata features={features} showheader={false} />
       </div>
     </div>
   );
 };
 
-export default Features;
+export default Contact;
