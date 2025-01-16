@@ -50,7 +50,7 @@ function Servicehero() {
                         />
                     </div>
                 </section>
-                <section className="bg-gray-50 py-12">
+                <section className="bg-gray-300 py-12">
                     <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
                         <div>
                             <h3 className="text-3xl font-bold text-blue-600">50+</h3>
