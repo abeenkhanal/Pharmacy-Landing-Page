@@ -5,14 +5,12 @@ const Solutions = () => {
   return (
     <section className="bg-gradient-to-r from-blue-900 to-blue-600 text-white py-16 px-6 lg:px-16">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
-        {/* Left Content Section */}
         <div className="lg:w-1/2">
           <h2 className="text-4xl font-bold mb-4">Tailored Pharmacy Solutions</h2>
           <p className="text-lg mb-8">
             Explore features designed to meet the unique needs of your pharmacy, from inventory management to prescription tracking.
           </p>
           <div className="space-y-6">
-            {/* Feature 1 */}
             <div className="flex items-start gap-4">
               <FaClipboardList className="text-blue-300 text-3xl" />
               <div>
@@ -22,7 +20,6 @@ const Solutions = () => {
                 </p>
               </div>
             </div>
-            {/* Feature 2 */}
             <div className="flex items-start gap-4">
               <FaPrescriptionBottle className="text-blue-300 text-3xl" />
               <div>
@@ -32,7 +29,6 @@ const Solutions = () => {
                 </p>
               </div>
             </div>
-            {/* Feature 3 */}
             <div className="flex items-start gap-4">
               <FaFileInvoiceDollar className="text-blue-300 text-3xl" />
               <div>
@@ -44,8 +40,6 @@ const Solutions = () => {
             </div>
           </div>
         </div>
-
-        {/* Right Image Section */}
         <div className="lg:w-1/2">
           <img
             src="Services.jpg"

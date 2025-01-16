@@ -2,71 +2,35 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+    <div className=" flex items-center justify-center " style={{
+      backgroundImage: "url('https://images.pexels.com/photos/12405413/pexels-photo-12405413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
+      backgroundAttachment: "fixed",
+    }}>
       <div className="container mx-auto p-6">
-        <div className="grid md:grid-cols-2 gap-10 items-center bg-white shadow-lg rounded-lg overflow-hidden">
+        <div className="grid md:grid-cols-2 gap-10 items-center bg-transparent rounded-lg overflow-hidden">
           <div className="p-8">
             <h1 className="text-2xl font-bold mb-4">Get in touch</h1>
-            <p className="text-gray-600 mb-6">
+            <p className="text-slate-900   mb-6">
               Our friendly team would love to hear from you!
             </p>
             <form className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
-                <input
-                  type="text"
-                  placeholder="First name"
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
-                  required
-                />
-                <input
-                  type="text"
-                  placeholder="Last name"
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
-                  required
-                />
+                <input type="text" placeholder="First name" className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" required />
+
+                <input type="text" placeholder="Last name" className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" required />
               </div>
-              <input
-                type="email"
-                placeholder="you@company.com"
-                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
-                required
-              />
-              <input
-                type="tel"
-                placeholder="+977 00000-00000"
-                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
-              />
-              <textarea
-                placeholder="Message"
-                rows="4"
-                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
-              ></textarea>
+              <input type="email" placeholder="abeen@gmail.com" className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" required />
+              <input type="tel" placeholder="+977 00000-00000" className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" />
+              <textarea placeholder="Message" rows="4" className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500">
+
+              </textarea>
               <div className="flex items-center">
-                <input
-                  type="checkbox"
-                  id="privacyPolicy"
-                  className="h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-300 rounded"
-                />
-                <label
-                  htmlFor="privacyPolicy"
-                  className="ml-2 text-gray-600 text-sm"
-                >
-                  You agree to our friendly{" "}
-                  <a
-                    href="#"
-                    className="text-purple-500 underline hover:text-purple-700"
-                  >
-                    privacy policy
-                  </a>
-                  .
+                <input type="checkbox" id="privacyPolicy" className="h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-300 rounded" />
+                <label htmlFor="privacyPolicy" className="ml-2 text-gray-900 text-l">You agree to our friendly
+                  <a href="./sjbfkas" className="text-purple-500 underline hover:text-purple-700">privacy policy</a>
                 </label>
               </div>
-              <button
-                type="submit"
-                className="w-full bg-purple-600 text-white p-3 rounded-md hover:bg-purple-700 transition"
-              >
-                Send message
-              </button>
+              <button type="submit" className="w-full bg-purple-600 text-white py-3 rounded-md hover:bg-purple-700 transition duration-300">Submit</button>
             </form>
           </div>
           <div className="relative h-[500px]">
