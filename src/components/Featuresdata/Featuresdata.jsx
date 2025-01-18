@@ -33,7 +33,6 @@ const features = [
     description: "Efficiently manage and track suppliers.",
   },
 ];
-
 const Featuresdata = () => {
   return (
     <div className="bg-gradient-to-l from-white to-green-100 min-h-screen p-8 sm:p-14">
