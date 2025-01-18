@@ -69,7 +69,7 @@ const Features = () => {
     <div className="py-16">
     <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center">
 
-      <div className="lg:w-1/2 text-center lg:text-left">
+      <div className="lg:w-1/2 text-center lg:text-left ">
         <h1 className="text-5xl font-bold text-gray-800 leading-tight">
           Discover Our Pharmacy Management Software
         </h1>
