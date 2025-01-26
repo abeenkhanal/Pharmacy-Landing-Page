@@ -1,25 +1,25 @@
 import React from 'react';
-import { FaLightbulb, FaUsers, FaShieldAlt } from 'react-icons/fa';
+import { FaPills, FaPrescriptionBottle, FaUsers } from "react-icons/fa";
 
 const Connectdiscover = () => {
   const features = [
     {
       id: 1,
-      icon: <FaLightbulb className="text-blue-300 text-3xl" />,
-      title: "Pharmacy Innovations",
-      description: "Stay ahead with the latest in pharmacy technology and management solutions.",
+      icon: <FaPills className="text-blue-300 text-3xl" />,
+      title: "Advanced Inventory Management",
+      description: "Monitor stock levels in real-time and streamline restocking with automated alerts.",
     },
     {
       id: 2,
-      icon: <FaUsers className="text-blue-300 text-3xl" />,
-      title: "Community Support",
-      description: "Join our community to connect with other pharmacy professionals and share insights.",
+      icon: <FaPrescriptionBottle className="text-blue-300 text-3xl" />,
+      title: "Accurate Prescription Tracking",
+      description: "Manage and track prescriptions efficiently to ensure patient satisfaction.",
     },
     {
       id: 3,
-      icon: <FaShieldAlt className="text-blue-300 text-3xl" />,
-      title: "Secure Solutions",
-      description: "Trust in our secure and reliable software to manage your pharmacy operations efficiently.",
+      icon: <FaUsers className="text-blue-300 text-3xl" />,
+      title: "Team Collaboration",
+      description: "Enhance teamwork with tools designed for seamless communication among staff.",
     },
   ];
 

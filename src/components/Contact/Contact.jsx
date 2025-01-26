@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <div className=" flex items-center justify-center " style={{
-      backgroundImage: "url('https://images.pexels.com/photos/12405413/pexels-photo-12405413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
+      backgroundImage: "./background.jpg",
       backgroundAttachment: "fixed",
     }}>
       <div className="container mx-auto p-6">

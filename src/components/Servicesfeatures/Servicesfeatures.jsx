@@ -16,7 +16,7 @@ const Servicesfeatures = () => {
         {
             icon: <FaChartLine className="text-blue-600 text-5xl sm:text-4xl mr-4" />,
             title: "Analytics Dashboard",
-            description: "Gain insights into your pharmacy’s performance with detailed sales and inventory reports.",
+            description: "Gain insights into your pharmacy's performance with detailed sales and inventory reports.",
         },
         {
             icon: <FaUserMd className="text-blue-600 text-5xl sm:text-4xl mr-4" />,
