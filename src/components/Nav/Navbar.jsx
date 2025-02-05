@@ -20,9 +20,9 @@ const Navbar = () => {
                 {/* Logo */}
                 <div className="flex items-center space-x-2">
                     <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md">
-                        <img src="./logo.png" alt="Logo" className="w-8 h-8 object-cover" />
+                        <img src="./mainlogo.png" alt="Logo" className="w-8 h-8 object-cover" />
                     </div>
-                    <span className="text-xl font-semibold">Landing Page</span>
+                    <span className="text-xl font-semibold">Living Care Pharmacy</span>
                 </div>
 
            

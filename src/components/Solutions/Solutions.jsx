@@ -45,7 +45,7 @@ const Solutions = () => {
             src="Services.jpg"
             alt="Pharmacy Technology"
             className="rounded-lg shadow-lg"
-          />
+/>
         </div>
       </div>
     </section>
