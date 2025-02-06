@@ -61,18 +61,15 @@ const Faq = () => {
                             <img
                                 src="https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                 alt="Pharmacy Team at Work"
-                                className="rounded-lg shadow-lg w-full h-full object-cover"
-                            />
+                                className="rounded-lg shadow-lg w-full h-full object-cover"/>
                             <img
                                 src="https://images.pexels.com/photos/19471016/pexels-photo-19471016/free-photo-of-young-pharmacist-writing-notes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                 alt="Pharmacy Team Collaboration"
-                                className="absolute -bottom-10 left-10 w-[20%] lg:w-[40%] rounded-lg shadow-xl border-4 border-white"
-                            />
+                                className="absolute -bottom-10 left-10 w-[20%] lg:w-[40%] rounded-lg shadow-xl border-4 border-white"/>
                             <img
                                 src="https://images.pexels.com/photos/4031323/pexels-photo-4031323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                 alt="Pharmacy Team Collaboration"
-                                className="absolute -bottom-10 right-8 w-[50%] lg:w-[40%] rounded-lg shadow-xl border-4 border-white"
-                            />
+                                className="absolute -bottom-10 right-8 w-[50%] lg:w-[40%] rounded-lg shadow-xl border-4 border-white"/>
                         </div>
                     </div>
                     <div className="lg:w-1/2">
@@ -89,12 +86,10 @@ const Faq = () => {
                             {thought.map((ask, index) => (
                                 <div
                                     key={index}
-                                    className="bg-white shadow-md rounded-lg overflow-hidden"
-                                >
+                                    className="bg-white shadow-md rounded-lg overflow-hidden">
                                     <button
                                         onClick={() => toggleFAQ(index)}
-                                        className="w-full flex items-center justify-between px-6 py-4 text-left text-gray-800 hover:bg-gray-100 transition-colors duration-300"
-                                    >
+                                        className="w-full flex items-center justify-between px-6 py-4 text-left text-gray-800 hover:bg-gray-100 transition-colors duration-300">
                                         <span className="text-lg font-medium">{ask.question}</span>
                                         {openFAQ === index ? (
                                             <FiChevronUp className="h-6 w-6 text-gray-500" />
@@ -105,8 +100,7 @@ const Faq = () => {
                                     <div
                                         className={`px-6 bg-gray-50 overflow-hidden transition-all duration-500 ease-in-out ${
                                             openFAQ === index ? "max-h-[500px] py-4" : "max-h-0"
-                                        }`}
-                                    >
+                                        }`}>
                                         <ul className="list-disc pl-6 text-gray-600 space-y-2">
                                             {ask.answer.map((line, idx) => (
                                                 <li key={idx}>{line}</li>

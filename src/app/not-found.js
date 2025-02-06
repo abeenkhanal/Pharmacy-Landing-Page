@@ -5,8 +5,7 @@ export default function NotFound() {
             <img
                 src="/error.png"
                 alt="404 Not Found"
-                className="w-64 mb-6"
-            />
+                className="w-64 mb-6"/>
             <h1 className="text-4xl font-bold text-red-500 mb-4">
                 404 - Page Not Found
             </h1>
@@ -17,14 +16,12 @@ export default function NotFound() {
             <div className="flex space-x-4">
                 <a
                     href="/"
-                    className="px-6 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700 transition"
-                >
+                    className="px-6 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700 transition">
                     Go Home
                 </a>
                 <a
                     href="/contact"
-                    className="px-6 py-2 bg-gray-200 text-gray-800 rounded-md shadow hover:bg-gray-300 transition"
-                >
+                    className="px-6 py-2 bg-gray-200 text-gray-800 rounded-md shadow hover:bg-gray-300 transition">
                     Contact Us
                 </a>
             </div>

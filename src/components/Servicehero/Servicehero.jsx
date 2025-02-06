@@ -8,8 +8,7 @@ function ServiceHero() {
                 style={{
                     backgroundImage: "url('/pattern2.jpg')",
                     backgroundAttachment: "fixed",
-                }}
-            >
+                }}>
                 <section className="flex flex-col lg:flex-row items-center justify-between py-16 w-11/12 mx-auto">
                     <div className="lg:w-1/2 lg:text-left">
                         <h1 className="text-5xl font-extrabold leading-tight mb-6">
@@ -40,8 +39,7 @@ function ServiceHero() {
                         <img
                             src="about.jpg"
                             alt="Pharmacy Management"
-                            className="rounded-lg shadow-lg w-full"
-                        />
+                            className="rounded-lg shadow-lg w-full"/>
                     </div>
                 </section>
             </div>

@@ -68,20 +68,17 @@ const Testimonials = () => {
           
           <div
             className="flex transition-transform duration-700 ease-in-out"
-            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-          >
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-full md:w-1/3 px-4"
-              >
+                className="flex-shrink-0 w-full md:w-1/3 px-4">
                 <div className="bg-white rounded-lg border shadow-lg p-6 w-full sm:w-80 mx-auto hover:shadow-xl transition-shadow duration-300">
                   <div className="flex flex-col items-center">
                     <img
                       src={testimonial.image}
                       alt={testimonial.name}
-                      className="w-20 h-20 rounded-full mb-4 object-cover border-2 border-orange-400"
-                    />
+                      className="w-20 h-20 rounded-full mb-4 object-cover border-2 border-orange-400"/>
                     <blockquote className="text-gray-600 italic text-center mb-4">
                       "{testimonial.feedback}"
                     </blockquote>
